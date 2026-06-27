@@ -4,7 +4,7 @@ const MOCK_USERS: Array<AuthUser & { password: string }> = [
   {
     id: "1",
     name: "Maria Silva",
-    email: "admin@solpotiguar.com",
+    email: "admin@descubrarn.com",
     password: "123456",
     token: "mock-jwt-token-admin",
     role: "admin",
@@ -12,7 +12,7 @@ const MOCK_USERS: Array<AuthUser & { password: string }> = [
   {
     id: "2",
     name: "João Pereira",
-    email: "cliente@exemplo.com",
+    email: "cliente@descubrarn.com",
     password: "123456",
     token: "mock-jwt-token-cliente",
     role: "cliente",

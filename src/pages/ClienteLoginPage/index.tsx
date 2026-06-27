@@ -191,9 +191,9 @@ export const ClienteLoginPage = () => {
               </Button>
 
               <Text fontSize="xs" color="fg.muted" textAlign="center">
-                Demo cliente: cliente@exemplo.com / 123456
+                Demo cliente: cliente@descubrarn.com / 123456
                 <br />
-                Demo admin: admin@solpotiguar.com / 123456
+                Demo admin: admin@descubrarn.com / 123456
               </Text>
 
               <Button asChild variant="ghost" size="sm">
