@@ -3,7 +3,7 @@ import type { AuthUser, LoginRequest, LoginResponse } from "@/types";
 const MOCK_USERS: Array<AuthUser & { password: string }> = [
   {
     id: "1",
-    name: "Maria Silva",
+    name: "Edson Admin",
     email: "admin@descubrarn.com",
     password: "123456",
     token: "mock-jwt-token-admin",
@@ -11,7 +11,7 @@ const MOCK_USERS: Array<AuthUser & { password: string }> = [
   },
   {
     id: "2",
-    name: "João Pereira",
+    name: "Lucas Cliente",
     email: "cliente@descubrarn.com",
     password: "123456",
     token: "mock-jwt-token-cliente",
