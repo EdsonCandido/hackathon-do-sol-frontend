@@ -1,3 +1,4 @@
+import { AppLogo } from "@/components/ui/AppLogo";
 import { ColorModeToggle } from "@/components/ui/ColorModeToggle";
 import { useAuth } from "@/hooks/useAuth";
 import {
@@ -54,19 +55,7 @@ export const TouristNavbar = () => {
     >
       <Flex align="center" justify="space-between" maxW="1200px" mx="auto">
         <Flex align="center" gap={3}>
-          <Flex
-            align="center"
-            justify="center"
-            w={9}
-            h={9}
-            borderRadius="lg"
-            bg="blue.900"
-            color="white"
-            fontWeight="bold"
-            fontSize="sm"
-          >
-            RN
-          </Flex>
+          <AppLogo w={9} h={9} borderRadius="lg" />
           <Box>
             <Heading size="md" lineHeight="shorter">
               <Link to="/">{APP_NAME}</Link>

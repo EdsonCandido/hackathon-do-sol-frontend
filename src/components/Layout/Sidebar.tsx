@@ -1,3 +1,4 @@
+import { AppLogo } from "@/components/ui/AppLogo";
 import { useAuth } from "@/hooks/useAuth";
 import {
   Avatar,
@@ -39,19 +40,7 @@ export const Sidebar = () => {
       top={0}
     >
       <Flex align="center" gap={3} mb={8}>
-        <Flex
-          align="center"
-          justify="center"
-          w={10}
-          h={10}
-          borderRadius="lg"
-          bg="blue.900"
-          color="white"
-          fontWeight="bold"
-          fontSize="lg"
-        >
-          RN
-        </Flex>
+        <AppLogo w={10} h={10} borderRadius="lg" />
         <Heading size="md">{APP_NAME}</Heading>
       </Flex>
 

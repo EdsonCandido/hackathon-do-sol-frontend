@@ -1,5 +1,7 @@
+import { AppLogo } from "@/components/ui/AppLogo";
 import { ColorModeToggle } from "@/components/ui/ColorModeToggle";
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 const APP_NAME = import.meta.env.VITE_APP_NAME ?? "Descubra RN";
 
@@ -17,16 +19,21 @@ export const Navbar = () => {
       zIndex="sticky"
     >
       <Flex align="center" justify="space-between">
-        <Heading size="md" display={{ base: "block", md: "none" }}>
-          {APP_NAME}
-        </Heading>
-        <Text
-          fontSize="sm"
-          color="fg.muted"
-          display={{ base: "none", md: "block" }}
-        >
-          Admin — rotas turísticas RN
-        </Text>
+        <Flex align="center" gap={3}>
+          <AppLogo w={9} h={9} borderRadius="lg" />
+          <Box>
+            <Heading size="md" lineHeight="shorter">
+              <Link to="/">{APP_NAME}</Link>
+            </Heading>
+            <Text
+              fontSize="xs"
+              color="fg.muted"
+              display={{ base: "none", sm: "block" }}
+            >
+              Admin — rotas turísticas RN
+            </Text>
+          </Box>
+        </Flex>
         <ColorModeToggle />
       </Flex>
     </Box>

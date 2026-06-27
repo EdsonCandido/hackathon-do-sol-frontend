@@ -1,3 +1,4 @@
+import { AppLogo } from "@/components/ui/AppLogo";
 import { useAuth } from "@/hooks/useAuth";
 import {
   type LoginFormData,
@@ -87,24 +88,10 @@ export const ClienteLoginPage = () => {
         shadow="lg"
       >
         <Card.Header textAlign="center" pb={2}>
-          <Flex
-            align="center"
-            justify="center"
-            w={14}
-            h={14}
-            mx="auto"
-            mb={4}
-            borderRadius="xl"
-            bg="blue.900"
-            color="white"
-            fontWeight="bold"
-            fontSize="2xl"
-          >
-            RN
-          </Flex>
+          <AppLogo w={14} h={14} mx="auto" mb={4} borderRadius="xl" />
           <Heading size="lg">{APP_NAME}</Heading>
           <Text color="fg.muted" mt={1}>
-            Entre com sua conta — perfil definido pelas credenciais
+            Entre com sua conta
           </Text>
         </Card.Header>
 
